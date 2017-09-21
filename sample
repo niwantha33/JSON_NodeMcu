@@ -39,4 +39,13 @@ data.add(2.302038);
 root.printTo(Serial);
 {"sensor":"gps","time":1351824120,"data":[48.756080,2.302038]}
 
+
+if (!parsed.success()) {   //Check for errors in parsing
+ 
+    Serial.println("Parsing failed");
+    delay(5000);
+    return;
+ 
+  }
+
 https://bblanchon.github.io/ArduinoJson/
